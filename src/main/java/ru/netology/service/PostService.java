@@ -14,7 +14,7 @@ public class PostService {
   }
 
   public List<Post> all() {
-    return repository.all();
+    return (List<Post>) repository.all();
   }
 
   public Post getById(long id) {
@@ -29,4 +29,3 @@ public class PostService {
     repository.removeById(id);
   }
 }
-
